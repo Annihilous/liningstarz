@@ -2,8 +2,95 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.welcome_header {
-  background: blue;
+@import "palette";
+
+/*
+##      ## ######## ##        ######   #######  ##     ## ######## 
+##  ##  ## ##       ##       ##    ## ##     ## ###   ### ##       
+##  ##  ## ##       ##       ##       ##     ## #### #### ##       
+##  ##  ## ######   ##       ##       ##     ## ## ### ## ######   
+##  ##  ## ##       ##       ##       ##     ## ##     ## ##       
+##  ##  ## ##       ##       ##    ## ##     ## ##     ## ##       
+ ###  ###  ######## ########  ######   #######  ##     ## ######## 
+*/
+
+#welcome_header {
+  h1 {
+    font-size: 88px;
+  }
+  p {
+    font-size: 24px;
+  }
+  background-color: $color_background;
+  color: $color_primary;
   height: 400px;
+}
+
+#welcome_page_featured_image {
+  background: url(green_fantasy_background.jpg) center center fixed;
+  background-size: cover;
+  height: 400px;
+}
+
+#featured_sections {
+  background-color: $color_background;
+  color: $color_primary;
+  min-height: 400px;
+  .featured_sections_columns {
+    padding: 20px;
+    border: 2px solid $color_primary;
+  }
+  .featured_sections_image {
+    height: 200px;
+    background-color: gray;
+  }
+}
+
+#welcome_footer {
+  min-height: 80px;
+  background-color: black;
+  color: $color_primary;
+  p {
+    margin: 0px;
+  }
+}
+
+/*
+########     ###    ##    ##  ######  ######## 
+##     ##   ## ##   ###   ## ##    ## ##       
+##     ##  ##   ##  ####  ## ##       ##       
+##     ## ##     ## ## ## ## ##       ######   
+##     ## ######### ##  #### ##       ##       
+##     ## ##     ## ##   ### ##    ## ##       
+########  ##     ## ##    ##  ######  ######## 
+*/
+
+#dance {
+  color: $color_primary;
+}
+
+/*
+ ######   #######  ##    ## ########    ###     ######  ######## 
+##    ## ##     ## ###   ##    ##      ## ##   ##    ##    ##    
+##       ##     ## ####  ##    ##     ##   ##  ##          ##    
+##       ##     ## ## ## ##    ##    ##     ## ##          ##    
+##       ##     ## ##  ####    ##    ######### ##          ##    
+##    ## ##     ## ##   ###    ##    ##     ## ##    ##    ##    
+ ######   #######  ##    ##    ##    ##     ##  ######     ##   
+*/
+
+#contact_us_modal {
+  color: black;
+  .modal-dialog {
+    border-radius: 50%;
+  }
+  .modal-header {
+    color: $color_white;
+    background-color: $color_secondary;
+    overflow: hidden;
+  }
+  .modal-footer {
+    background-color: $color_secondary;
+  }
 }
 

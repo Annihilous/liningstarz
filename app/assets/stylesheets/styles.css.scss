@@ -1,0 +1,374 @@
+@import "palette.scss";
+
+.no-margin {
+  margin: 0px;
+}
+
+/*
+########     ###    ########  ########  #### ##    ##  ######   
+##     ##   ## ##   ##     ## ##     ##  ##  ###   ## ##    ##  
+##     ##  ##   ##  ##     ## ##     ##  ##  ####  ## ##        
+########  ##     ## ##     ## ##     ##  ##  ## ## ## ##   #### 
+##        ######### ##     ## ##     ##  ##  ##  #### ##    ##  
+##        ##     ## ##     ## ##     ##  ##  ##   ### ##    ##  
+##        ##     ## ########  ########  #### ##    ##  ######   
+*/
+
+.pad {
+  padding: 20px 20px;
+}
+
+.pad-sm {
+  padding: 10px 10px;
+}
+
+.pad-lg {
+  padding: 30px 20px;
+}
+
+.pad-2x {
+  padding: 40px 20px;
+}
+
+.pad-4x {
+  padding: 60px 20px;
+}
+
+.pad-y {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pad-y-2x {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pad-y-4x {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.pad-x {
+  padding: 0px 20px;
+}
+
+.pad-top {
+  padding-top: 20px;
+}
+
+.pad-top {
+  padding-top: 40px;
+}
+
+.pad-top-4x {
+  padding-top: 80px;
+}
+
+.margin-y {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*
+######## ######## ##     ## ######## 
+   ##    ##        ##   ##     ##    
+   ##    ##         ## ##      ##    
+   ##    ######      ###       ##    
+   ##    ##         ## ##      ##    
+   ##    ##        ##   ##     ##    
+   ##    ######## ##     ##    ##    
+*/
+
+.text-white {
+  color: white;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.background-black-transparent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+ /*
+ ######   #######  ##    ## ########    ###    #### ##    ## ######## ########  
+##    ## ##     ## ###   ##    ##      ## ##    ##  ###   ## ##       ##     ## 
+##       ##     ## ####  ##    ##     ##   ##   ##  ####  ## ##       ##     ## 
+##       ##     ## ## ## ##    ##    ##     ##  ##  ## ## ## ######   ########  
+##       ##     ## ##  ####    ##    #########  ##  ##  #### ##       ##   ##   
+##    ## ##     ## ##   ###    ##    ##     ##  ##  ##   ### ##       ##    ##  
+ ######   #######  ##    ##    ##    ##     ## #### ##    ## ######## ##     ##
+ */
+
+.container {
+  max-width: 1000px;
+}
+
+.container-xs {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-sm {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-md {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-wrapper-tabs {
+  margin-bottom: -21px;
+  li {
+    a {
+      color: white;
+    }
+    &:hover {
+      a {
+        color: #666;
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  .content-header{
+    text-align: center;
+    h1 {
+      margin-top: 0px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .lead {
+      font-size: 12px;
+      font-style: italic;
+      color: #aaa;
+    }
+  }
+  .content-footer {
+    margin: -20px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-top: 1px solid #ddd;
+  }
+  &.intro-form .content-body {
+    min-height: 250px;
+  }
+}
+
+.alert {
+  margin-bottom: 0px; 
+}
+
+/*
+########  #######  ########  ##     ## 
+##       ##     ## ##     ## ###   ### 
+##       ##     ## ##     ## #### #### 
+######   ##     ## ########  ## ### ## 
+##       ##     ## ##   ##   ##     ## 
+##       ##     ## ##    ##  ##     ## 
+##        #######  ##     ## ##     ##
+*/
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #EFEFEF;
+  background-image: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  font-weight: 100;
+}
+
+label.underline {
+  margin-bottom: 20px;
+  &:after {
+    margin-top: 10px;
+  }
+}
+
+label, .label {
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #666;
+  font-size: 14px;
+  i {
+    margin-right: 10px;
+  }
+}
+
+input.multiselect-search {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border: 1px solid #ddd;
+}
+
+.checkbox, .radio {
+  margin-left: 20px;
+}
+
+/*
+########  ##     ## ######## ########  #######  ##    ## 
+##     ## ##     ##    ##       ##    ##     ## ###   ## 
+##     ## ##     ##    ##       ##    ##     ## ####  ## 
+########  ##     ##    ##       ##    ##     ## ## ## ## 
+##     ## ##     ##    ##       ##    ##     ## ##  #### 
+##     ## ##     ##    ##       ##    ##     ## ##   ### 
+########   #######     ##       ##     #######  ##    ##
+*/
+
+.btn {
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background-color: $color_primary;
+  border-color: $color_primary;
+  color: $color_background;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($color_primary, 10%);
+    border-color: darken($color_primary, 10%);
+    color: $color_background;
+  }
+}
+.btn-xl
+
+/*
+########  ########  #### ##     ##    ###    ########  ##    ##    #### ######## ######## ##     ## 
+##     ## ##     ##  ##  ###   ###   ## ##   ##     ##  ##  ##      ##     ##    ##       ###   ### 
+##     ## ##     ##  ##  #### ####  ##   ##  ##     ##   ####       ##     ##    ##       #### #### 
+########  ########   ##  ## ### ## ##     ## ########     ##        ##     ##    ######   ## ### ## 
+##        ##   ##    ##  ##     ## ######### ##   ##      ##        ##     ##    ##       ##     ## 
+##        ##    ##   ##  ##     ## ##     ## ##    ##     ##        ##     ##    ##       ##     ## 
+##        ##     ## #### ##     ## ##     ## ##     ##    ##       ####    ##    ######## ##     ##
+*/
+
+a, .btn-link {
+  color: $color_background;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color_background;
+  }
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: $color_primary;
+}
+
+/*
+##    ##    ###    ##     ## ####  ######      ###    ######## ####  #######  ##    ## 
+###   ##   ## ##   ##     ##  ##  ##    ##    ## ##      ##     ##  ##     ## ###   ## 
+####  ##  ##   ##  ##     ##  ##  ##         ##   ##     ##     ##  ##     ## ####  ## 
+## ## ## ##     ## ##     ##  ##  ##   #### ##     ##    ##     ##  ##     ## ## ## ## 
+##  #### #########  ##   ##   ##  ##    ##  #########    ##     ##  ##     ## ##  #### 
+##   ### ##     ##   ## ##    ##  ##    ##  ##     ##    ##     ##  ##     ## ##   ### 
+##    ## ##     ##    ###    ####  ######   ##     ##    ##    ####  #######  ##    ## 
+*/
+
+.nav {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav .nav-justified a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nav .nav-justified .nav-link {
+  padding-top: 15px;
+}
+
+#nav_link:hover {
+  color: #ff7878;
+  background-color: transparent;
+}
+
+.navbar-inverse {
+  background: $color_secondary;
+  border-color: $color_secondary;
+}
+
+
+/*
+########    ###    ########  ##       ######## 
+   ##      ## ##   ##     ## ##       ##       
+   ##     ##   ##  ##     ## ##       ##       
+   ##    ##     ## ########  ##       ######   
+   ##    ######### ##     ## ##       ##       
+   ##    ##     ## ##     ## ##       ##       
+   ##    ##     ## ########  ######## ######## 
+*/
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: middle;
+  border-top: 1px solid #ddd;
+}
+
+.underline {
+  &:after {
+    content: " ";
+    border-bottom: 2px solid;
+    display: block;
+    width: 80px;
+    margin-top: 20px;
+  }
+  &.center {
+    &:after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.tab-content {
+  padding-top: 20px;
+}

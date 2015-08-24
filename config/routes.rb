@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'contact' => 'pages#contact'
 
-  get 'codex' => 'pages#codex'
+  get 'codex' => 'pages#codex', :as => 'greatscotts', :path => 'greatscotts'
 
   root 'pages#welcome'
 

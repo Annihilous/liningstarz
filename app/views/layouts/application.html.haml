@@ -3,6 +3,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title LiningStarz
+    %link{:href => "http://fonts.googleapis.com/css?family=<link href='http://fonts.googleapis.com/css?family=Lobster|Alfa+Slab+One|Racing+Sans+One|Corben|Squada+One|Yeseva+One|Bigshot+One' rel='stylesheet' type='text/css'>", :rel => "stylesheet", :type => "text/css"}/
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -21,7 +22,22 @@
             %li= link_to "Index", index_path
             %li= link_to "About", about_path
             %li= link_to "Dance", dance_path
-            %li= link_to "Contact", contact_path
-            %li= link_to "Codex", codex_path
-    .container
-      = yield
+            %li
+              = link_to "Contact", { :data => { :target => "#contact_us_modal", :toggle => "modal"}} do
+                Contact
+            %li= link_to "Codex", greatscotts_path
+    = yield
+
+
+#contact_us_modal.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} &times;
+        %h4.modal-title What's up?
+      .modal-body
+        %p Share your thoughts telepathically, or by emailing the group mailbox.
+        %p LiningStarz@gmail.com
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Rejoyce

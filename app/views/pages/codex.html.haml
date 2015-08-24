@@ -1,2 +1,121 @@
-%h1 Pages#codex
-%p Find me in app/views/pages/codex.html.erb
+#great_scots_page
+
+  .container-md
+    .text-center.pad-4x
+      %h1.great_scotts_font_1 Great Scotts
+      
+      %h3.great_scotts_font_1
+        October 10, 2015
+        &mdash;
+        Villa Rica, GA
+
+      .pad-top.great_scotts_font_3
+        %a#great_scotts_button.btn.btn-lg.btn-primary.btn-block{:href => "#great_scotts_details"} JOIN THE FUN!
+
+  .container
+    .row
+      .col-md-6
+        %h2.text-center.pad-top.great_scotts_name.great_scotts_font_3
+          Scott Blevins
+          .great_scotts_image_wrapper.pad-top
+            = image_tag "scott_blevins.jpg"
+        .text-left.pad-top.great_scotts_font_3
+          %p Scott Blevins is an internationally known, award-winning choreographer, judge, and dance instructor. 
+        .text-center.pad-top
+          %a.btn.btn-lg.btn-primary.btn-block{:href => "http://www.scottblevins.com", :target => :blank} CHECK HIM OUT
+      .col-md-6
+        %h2.text-center.pad-top.great_scotts_name.great_scotts_font_3
+          Scott Schrank
+          .great_scotts_image_wrapper.pad-top
+            = image_tag "scott_schrank.jpg"
+
+        .text-left.pad-top.great_scotts_font_3
+          %p Scott Schrank is a competitive dancer, with top awards, for dancing, teaching, and choreography.
+        .text-center.pad-top
+          %a.btn.btn-lg.btn-primary.btn-block{:href => "http://www.scottschrank.com", :target => :blank} CHECK HIM OUT
+
+  #great_scotts_details.container-md
+    .text-center
+      %h2.great_scotts_font_1
+        Join us for an unforgetable day of fun and dancing!
+    .row.pad-top  
+      .col-md-6.great_scotts_detail_heading
+        %b Who:
+      .col-md-6
+        Great Scott's Teaching / Entertaining
+        %br
+        Great Friends Learning / Having Fun
+    .row.pad-top  
+      .col-md-6.great_scotts_detail_heading
+        %b What:
+      .col-md-6
+        Easy to Intermediate line dances
+    .row.pad-top  
+      .col-md-6.great_scotts_detail_heading
+        %b When:
+      .col-md-6
+        %table
+          %tr
+            %th{colspan: "2"} 
+              %u
+                October 10, 2015
+          %tr
+            %td
+              9:30 am
+            %td.pad-x
+              Doors Open
+          %tr
+            %td
+              10:00 am
+            %td.pad-x
+              Work Shops
+          %tr
+            %td
+              5:00 pm
+            %td.pad-x
+              Dinner
+          %tr
+            %td
+              7:30 pm
+            %td.pad-x
+              Dance Party!
+          %tr
+            %td
+              11:00 pm
+            %td.pad-x
+              Last Dance
+
+    .row.pad-top
+      .col-md-6.great_scotts_detail_heading
+        %b Where:
+      .col-md-6
+        Villa Rica Civic Center
+        %br
+        1605 Highway 61 Villa Rica, GA 30180
+        %br
+        678-929-8326
+    .row.pad-top  
+      .col-md-6.great_scotts_detail_heading
+        %b Why:
+      .col-md-6
+        Why not?
+    .pad-top-4x.great_scotts_font_3
+      %a#great_scotts_button.btn.btn-lg.btn-primary.btn-block{:download => "", :href => "great_scotts_registration_2015.xlsx"} REGISTER
+
+  #great_scotts_showcase.container
+    %h2.great_scotts_font_3 Showcase Your Group
+    %p.great_scotts_link
+      If your group would like to perform a team showcase dance during the workshop, please contact us at 
+      %a{:href => "mailto:liningstarz@gmail.com?subject=Great Scotts"} liningstarz@gmail.com
+      to get on the schedule.
+
+  #great_scotts_footer
+    .container-md
+      .row
+        .col-md-4.text-center.pad-y-4x
+          U Can Dance
+        .col-md-4.text-center.pad-y-4x.great_scotts_link
+          %a{:href => "mailto:liningstarz@gmail.com?subject=Great Scotts"} Contact Us
+        .col-md-4.text-center.pad-y-4x
+          &copy;
+          2015

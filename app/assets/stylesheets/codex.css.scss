@@ -1,0 +1,60 @@
+@import "palette.scss";
+
+#great_scots_page h1 {
+  font-size: 112px;
+}
+
+#great_scots_page img {
+  width: 100%;
+}
+
+#great_scots_page p {
+  font-size: 18px;
+}
+
+#great_scotts_button {
+  font-size: 38px;
+}
+
+#great_scotts_details {
+  padding: 80px 20px;
+  font-size: 20px;
+}
+
+#great_scotts_footer {
+  background-color: black;
+  margin-top: 80px;
+  color: white;
+  font-weight: bold;
+}
+
+.great_scotts_link a {
+  color: $color_primary;
+  font-weight: bold;
+}
+
+.great_scotts_link a:hover, a:focus {
+  color: darken($color_primary, 10%);
+  text-decoration: none;
+}
+
+.great_scotts_name {
+  font-size: 48px;
+}
+
+.great_scotts_image_wrapper {
+  overflow: hidden;
+  height: 470px;
+}
+
+.great_scotts_font_1 {
+  font-family: 'Lobster', cursive;
+}
+
+.great_scotts_font_2 {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.great_scotts_font_3 {
+  font-family: 'Squada One', cursive;
+}

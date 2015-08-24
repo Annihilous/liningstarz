@@ -10,7 +10,38 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require_tree .
+ *= require_self
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "styles";
+@import "pages";
+@import "palette";
+
+body {
+  background-color: $color_background;
+  color: $color_white;
+}
+
+.navbar-default {
+  margin-bottom: 0px;
+  background: $color_secondary;
+  color: $color_white;
+  border: none;
+  border-radius: 0px;
+  .navbar-brand {
+    color: $color_white;
+  }
+  .navbar-brand:hover {
+    color: silver;
+  }
+  .navbar-nav > li > a {
+    color: white;
+  }
+  .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    color: silver;
+  }
+  
+}
